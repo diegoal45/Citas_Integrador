@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('id_salon')->unique()->nullable(value: false);
             $table->string('specialty')->nullable(value: false);
             $table->string('description')->nullable(value: false);
-            $table->string('avatar')->nullable(value: false);
+            $table->string('avatar')->nullable(value: true);
             $table->boolean('active')->nullable(value: false);
             $table->timestamps();
         });

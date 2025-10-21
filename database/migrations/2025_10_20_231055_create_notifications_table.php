@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('notifications', function (Blueprint $table) {
             $table->integer(column: 'id')->autoIncrement()->nullable(value: false);
             $table->integer('id_user')->nullable(value: false);
-            $table->integer('type')->nullable(value: false);
-            $table->integer('title')->nullable(value: false);
+            $table->string('type')->nullable(value: false);
+            $table->string('title')->nullable(value: false);
             $table->string('message')->nullable(value: false);
             $table->string('notes')->nullable(value: false);
             $table->timestamps();

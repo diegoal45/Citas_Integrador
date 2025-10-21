@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('email')->unique()->nullable(value: false);
             $table->string('password')->nullable(value: false);
             $table->string('phone')->nullable(value: false);
-            $table->string('avatar')->nullable(value: false);
+            $table->string('avatar')->nullable(value: true);
             $table->integer('id_rol')->nullable(value: false)->onDelete('cascade');
             $table->rememberToken();
             $table->timestamps();
