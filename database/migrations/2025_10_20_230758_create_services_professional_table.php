@@ -15,7 +15,7 @@ return new class extends Migration
             $table->integer(column: 'id')->autoIncrement()->nullable(value: false);
             $table->integer('id_service')->nullable(value: false);
             $table->integer('id_professional')->unique()->nullable(value: false);
-            $table->string('custom price');
+            $table->string('custom_price');
             $table->timestamps();
         });
     }
