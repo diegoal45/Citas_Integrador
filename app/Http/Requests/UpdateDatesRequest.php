@@ -22,13 +22,11 @@ class UpdateDatesRequest extends FormRequest
     public function rules(): array
     {
         return [
-            
+
             "id_user" => ["required", "integer"],
             "id_professional" => ["required", "integer"],
             "id_service" => ["required", "integer"],
             "confirmation_code" => ["required", "string"],
-            "date" => ["required", "string"],
-            "start_time" => ["required", "string"],
             "date" => ["required", "string"],
             "start_time" => ["required", "string"],
             "end_time" => ["required", "string"],

@@ -29,8 +29,6 @@ class CreateDatesRequest extends FormRequest
             "confirmation_code" => ["required", "string"],
             "date" => ["required", "string"],
             "start_time" => ["required", "string"],
-            "date" => ["required", "string"],
-            "start_time" => ["required", "string"],
             "end_time" => ["required", "string"],
             "active" => ["required", "boolean"],
             "final_price" => ["required", "string"],
